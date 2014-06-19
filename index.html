@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
 lang="en" style="">
 
 <head>
@@ -7,6 +7,7 @@ lang="en" style="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RuneTunes</title>
     <link rel="stylesheet" href="css/foundation.css">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script src="js/vendor/modernizr.js"></script>
     <style>
         html
@@ -22,8 +23,8 @@ lang="en" style="">
             background-size: cover;
             /* background-image: url('img/bg.jpg');
             */
-                            
-                            background-color: #ccc;
+                                    
+                                    background-color: #ccc;
             background-repeat: no-repeat;
             background-position: center;
             background-origin: center;
@@ -116,7 +117,41 @@ lang="en" style="">
         {
             text-align: center;
         }
+        
+        .track-row
+        {
+            font-size: 1em;
+            width:100%;
+        }
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen 
+            and (min-device-width : 320px) 
+            and (max-device-width : 480px) {
+            /* Styles */
+            #mob-tab { display: block; }
+            #des-tab { display: none; }
+        }
+        /* iPhone 4 ----------- */
+        @media
+            only screen and (-webkit-min-device-pixel-ratio : 1.5),
+            only screen and (min-device-pixel-ratio : 1.5)
+            and (min-device-width : 320px) 
+            and (max-device-width : 480px) {
+            /* Styles */
+            #mob-tab { display: block; }
+            #des-tab { display: none; }
+        }
+        
+        /* Desktops and laptops ----------- */
+        @media only screen 
+            and (min-width : 768px) {
+            /* Styles */
+            #mob-tab { display: none; }
+            #des-tab { display: block; }
+        }
     </style>
+
+
     <link href="css/glober.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -148,8 +183,8 @@ lang="en" style="">
 
                         <h2>Simple Instructions</h2>
                         <p><i>RunTunes</i> has been created to be as simple and universal as possible. There are just two modes: Running and not running. All you need to remember is one thing:&nbsp;</p>
-                        <p style="text-align: center"><strong class="upper">When the drums are drumming, you should be running.&nbsp;</strong>
-                        </p>
+                        <div class="panel callout upper" style="text-align: center"><strong>When the drums are drumming, you should be running.&nbsp;</strong>
+                        </div>
                         <p>But here's some other tips:</p>
                         <ul>
                             <li>When the drums stop make sure you're walking</li>
@@ -179,7 +214,100 @@ lang="en" style="">
                     <!-- Managed By -->
                     <div class="row">
                         <div class="large-12 columns">
-                            <div class="panel">
+
+
+                            <div class="panel" id="mob-tab">
+                                <h2>Get these tracks on your device now!</h2>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 1</span> 
+                                                    <br>Run one minute. Walk 90 seconds. Repeat eight times
+                                                </p>
+                                                <a href="https://dl.dropboxusercontent.com/u/59039/runtunes/runtunes-w1.mp3" class="button success buy expand" style="line-height: 2.4em; margin-bottom: 0px;"> Free download</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 2</span> 
+                                                    <br>Run two minutes. Walk one minute. Repeat seven times
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w2" class="button secondary right buy small success expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Buy MP3</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 3</span> 
+                                                    <br>Run three minutes. Walk one minute. Repeat six times
+                                                    <br>
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small disabled expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 4</span> 
+                                                    <br>Run five minutes. Walk two minutes. Repeat four times
+                                                    <br>
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small disabled expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 5</span> 
+                                                    <br>xxxxxxxxxxx
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small disabled expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 6</span> 
+                                                    <br>xxxxxxxxxxx
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small disabled expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 7</span> 
+                                                    <br>xxxxxxxxxxx
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small disabled expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="track-row">
+                                                <p class="regime"><span class="blue">Week 8</span> 
+                                                    <br>xxxxxxxxxxx
+                                                </p>
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small disabled expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+
+                            <div class="panel" id="des-tab">
                                 <h2>Get these tracks on your device now!</h2>
                                 <table width="100%">
                                     <tbody>
@@ -194,7 +322,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 2</td>
+                                            <td class="regime blue">Week 2</td>
                                             <td class="regime">
                                                 Run two minutes. Walk one minute. Repeat seven times
                                             </td>
@@ -205,7 +333,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 3</td>
+                                            <td class="regime blue">Week 3</td>
                                             <td class="regime">
                                                 Run three minutes. Walk one minute. Repeat six times
                                             </td>
@@ -218,7 +346,7 @@ lang="en" style="">
 
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 4</td>
+                                            <td class="regime blue">Week 4</td>
                                             <td class="regime">
                                                 Run five minutes. Walk two minutes. Repeat four times
                                             </td>
@@ -229,7 +357,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 5</td>
+                                            <td class="regime blue">Week 5</td>
                                             <td class="regime">
                                                 Run eight minutes. Walk two minutes. Repeat three times
                                             </td>
@@ -240,7 +368,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 6</td>
+                                            <td class="regime blue">Week 6</td>
                                             <td class="regime">
                                                 Run 12 minutes. Walk one minute. Repeat three times
                                             </td>
@@ -251,7 +379,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 7</td>
+                                            <td class="regime blue">Week 7</td>
                                             <td class="regime">
                                                 Run 15 minutes. Walk one minute. Run 15 minutes again</td>
                                             <td class="regime blue">
@@ -261,7 +389,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue">Week 8</td>
+                                            <td class="regime blue">Week 8</td>
                                             <td class="regime">
                                                 Run 30 minutes continuously</td>
                                             <td class="regime blue">
@@ -271,7 +399,7 @@ lang="en" style="">
                                         </tr>
 
                                         <tr>
-                                            <td width="100" class="regime blue upper txt-centred">All</td>
+                                            <td class="regime blue upper txt-centred">All</td>
                                             <td class="regime">
                                                 Get all the downloads in a single bundle so you can preload your MP3 player
 
@@ -342,6 +470,8 @@ lang="en" style="">
           ga('create', 'UA-44436889-3', 'runtunes.co.uk');
           ga('send', 'pageview');
     </script>
+
+
 
 
 
