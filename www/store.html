@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuneTunes</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <style>
+        html
+        {
+        }
+        
+        body
+        {
+            font-family: 'glober', sans-serif;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* background-image: url('img/bg.jpg');
+            */
+                            
+                            background-color: #ccc;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-origin: center;
+            background-color: #dbd7d7;
+        }
+        
+        h1
+        {
+            font-family: 'glober', sans-serif;
+            color: #fda42f;
+            font-weight: 500;
+            text-align: center;
+            Background-color: black;
+            width: auto;
+            background-color: #bf311a;
+            line-height: 1.8em;
+        }
+        
+        h2
+        {
+            font-family: 'glober', sans-serif;
+            font-weight: 700;
+            color: #7e7e7e;
+            text-align: center;
+            line-height: 1.4em;
+        }
+        
+        h5
+        {
+            font-family: 'glober', sans-serif;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+        
+        p
+        {
+            font-size: 1.1em;
+        }
+        
+        .logo
+        {
+            min-width: 300px;
+            max-width: 800px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        
+        .gumroad-icn
+        {
+            margin-top: 0px;
+            margin-right: 3px;
+            height: 30px;
+            width: 30px;
+        }
+        
+        .buy
+        {
+            font-weight: 700;
+            font-size: 1em !important;
+            font-family: 'glober', sans-serif;
+        }
+        
+        .regime
+        {
+            font-size: 1.1em;
+            font-weight: 600;
+            line-height: 1.6em;
+        }
+        
+        .blue
+        {
+            color: #3c7499;
+            font-weight: 700;
+        }
+        
+        small
+        {
+            font-size: 0.8em;
+        }
+        
+        .upper
+        {
+            text-transform: uppercase;
+        }
+        
+        .txt-centred
+        {
+            text-align: center;
+        }
+    </style>
+    <!--[if !IE]><!-->
+    <style>
+        /* 
+        	Max width before this PARTICULAR table gets nasty
+        	This query will take effect for any screen smaller than 760px
+        	and also iPads specifically.
+        	*/
+        	@media 
+        	only screen and (max-width: 760px),
+        	(min-device-width: 768px) and (max-device-width: 1024px)  {
+        	
+        		/* Force table to not be like tables anymore */
+        		table, thead, tbody, th, td, tr { 
+        			display: block; 
+        		}
+        		
+        		/* Hide table headers (but not display: none;, for accessibility) */
+        		thead tr { 
+        			position: absolute;
+        			top: -9999px;
+        			left: -9999px;
+        		}
+        		
+        		tr { border: 1px solid #ccc; }
+        		
+        		td { 
+        			/* Behave  like a "row" */
+        			border: none;
+        			border-bottom: 1px solid #eee; 
+        			position: relative;
+        			padding-left: 50%; 
+        		}
+        		
+        		td:before { 
+        			/* Now like a table header */
+        			position: absolute;
+        			/* Top/left values mimic padding */
+        			top: 6px;
+        			left: 6px;
+        			width: 45%; 
+        			padding-right: 10px; 
+        			white-space: nowrap;
+        		}
+        		
+        		/*
+        		Label the data
+        		*/
+        		td:nth-of-type(1):before { content: "First Name"; }
+        		td:nth-of-type(2):before { content: "Last Name"; }
+        		td:nth-of-type(3):before { content: "Job Title"; }
+        		td:nth-of-type(4):before { content: "Favorite Color"; }
+        		td:nth-of-type(5):before { content: "Wars of Trek?"; }
+        		td:nth-of-type(6):before { content: "Porn Name"; }
+        		td:nth-of-type(7):before { content: "Date of Birth"; }
+        		td:nth-of-type(8):before { content: "Dream Vacation City"; }
+        		td:nth-of-type(9):before { content: "GPA"; }
+        		td:nth-of-type(10):before { content: "Arbitrary Data"; }
+        	}
+        	
+        	/* Smartphones (portrait and landscape) ----------- */
+        	@media only screen
+        	and (min-device-width : 320px)
+        	and (max-device-width : 480px) {
+        		body { 
+        			padding: 0; 
+        			margin: 0; 
+        			width: 320px; }
+        		}
+        	
+        	/* iPads (portrait and landscape) ----------- */
+        	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        		body { 
+        			width: 495px; 
+        		}
+        	}
+    </style>
+    <!--<![endif]-->
+    <link href="css/glober.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="large-12 columns">
+
+
+            <div class="row">
+
+                <!-- Side Bar -->
+
+                <div class="small-12 columns large-centered small-centered">
+
+                    <img src="img/logo.png" class="logo" alt="Logo">
+
+                    <h1>"A less annoying way to a healthier life"</h1>
+                    <div class="panel">
+                        <h2>Starting Out</h2>
+                        <p>So you've decided to make a change in your life. You've ignored your body for too long. Too many hours in front of a screen. The time is now before it's too late! It's time to get fit! But where to start? The gym is an expensive
+                            commitment and just isn't right.&nbsp;You want to ease yourself into a happier and healthier lifestyle.</p>
+                        <h2>Get Off The Couch</h2>
+                        <p>In the UK the National Health Service runs a program known as Couch To 5K. It helps people like us take control of our bodies and sets out a fantastic program for even the most unhealthy people to get up and acheive. There is a
+                            very useful <a href="https://itunes.apple.com/gb/podcast/nhs-couch-to-5k/id394384987?mt=2">podcast</a> which give you a personal trainer in your earphones talking you through the steps week by week.</p>
+                        <h2>Less Annoying</h2>
+                        <p>If you're anything like me you would prefer to not be distracted with boyband sugar-coated pop music or the scraping voice of the commentator. You just want to know when to run and when to walk. <i>RunTunes</i> has been created to
+                            give you just that and lets you ease yourself into a healthier life without having to listen to tortuous pop music.</p>
+
+                        <h2>Simple Instructions</h2>
+                        <p><i>RunTunes</i> has been created to be as simple and universal as possible. There are just two modes: Running and not running. All you need to remember is one thing:&nbsp;</p>
+                        <p style="text-align: center"><strong class="upper">When the drums are drumming, you should be running.&nbsp;</strong>
+                        </p>
+                        <p>But here's some other tips:</p>
+                        <ul>
+                            <li>When the drums stop make sure you're walking</li>
+                            <li>Try to do three runs a week</li>
+                            <li>Good shoes help</li>
+                            <li>Go slowly!</li>
+                            <li>Do some stretching after each run</li>
+                            <li>Don't over do it!</li>
+                        </ul>
+                        <p>The first track is a <strong>Free Download</strong> so go get off the couch!</p>
+                    </div>
+
+
+                </div>
+
+                <!-- End Side Bar -->
+
+
+                <!-- Thumbnails -->
+
+                <div class="columns">
+
+
+                    <!-- End Thumbnails -->
+
+
+                    <!-- Managed By -->
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="panel">
+                                <h2>Get these tracks on your device now!</h2>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 1</td>
+                                            <td class="regime">Run one minute. Walk 90 seconds. Repeat eight times
+
+                                            </td>
+                                            <td class="regime blue medium-3"><a href="https://dl.dropboxusercontent.com/u/59039/runtunes/runtunes-w1.mp3" class="button success right buy small expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                    Free download</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 2</td>
+                                            <td class="regime">
+                                                Run two minutes. Walk one minute. Repeat seven times
+                                            </td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w2" class="button secondary right buy small success expand" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Buy MP3</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 3</td>
+                                            <td class="regime">
+                                                Run three minutes. Walk one minute. Repeat six times
+                                            </td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 4</td>
+                                            <td class="regime">
+                                                Run five minutes. Walk two minutes. Repeat four times
+                                            </td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 5</td>
+                                            <td class="regime">
+                                                Run eight minutes. Walk two minutes. Repeat three times
+                                            </td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 6</td>
+                                            <td class="regime">
+                                                Run 12 minutes. Walk one minute. Repeat three times
+                                            </td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 7</td>
+                                            <td class="regime">
+                                                Run 15 minutes. Walk one minute. Run 15 minutes again</td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue">Week 8</td>
+                                            <td class="regime">
+                                                Run 30 minutes continuously</td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class=" gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td width="100" class="regime blue upper txt-centred">All</td>
+                                            <td class="regime">
+                                                Get all the downloads in a single bundle so you can preload your MP3 player
+
+                                            </td>
+                                            <td class="regime blue">
+                                                <a href="https://gum.co/runtunes-w1" class="button secondary right buy small expand disabled" style="line-height: 2.4em; margin-bottom: 0px;">
+                                                    <img src="img/g-transparent-512.png" class="gumroad gumroad-icn" height="20px" width="20px" alt="Gumroad">Coming soon...</a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel clearfix">
+                                <h2>Mascot</h2>
+                                <p>I chose this bunny as he looks like the potatoe I feel like at the start of this journey but has like all rabbits the potential to be fast, nimble and go on and on and on and on (that's a reference to batteries!).</p>
+                                <img src="img/bunny.png" style="display:block;margin:auto;">
+                            </div>
+                        </div>
+
+                        <!-- End Managed By -->
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+
+            <footer class="row">
+                <div class="large-12 columns">
+                    <div class="panel callout">
+                        <small><strong>Terms &amp; Conditions:</strong> This site, service, products and tunes are created by <a href="http://aan.io">myself</a> and I claim no significant expertise in fitness training, healthy activities or physical benefits from exercise. I am an independent software developer who has spent too much time tapping away at a keyboard and not enough time taking care of my body. I have made these recording for myself to run to. They are offered here in the hope that other people will find them helpful and a little less annoying than the sugar-coated glossy products available elsewhere on the interweb. If you purchase, download and use them you do so at your own risk. If you harm yourself in any way, slip on a banana or in fact drop dead or cause harm to any other person, animal or property, you do so with responsibility and under your own volition and agree that the slightly overweight and terribly unhealthy developer that created this site, service and products is not responsible in any way.</small>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="large-12 columns">
+                            <h5>RunTunes © 2014</h5>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </footer>
+
+            <!-- End Footer -->
+
+        </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-44436889-3', 'runtunes.co.uk');
+          ga('send', 'pageview');
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
