@@ -24,8 +24,8 @@ lang="en" style="">
             background-size: cover;
             /* background-image: url('img/bg.jpg');
             */
-                                                    
-                                                    background-color: #ccc;
+                                                            
+                                                            background-color: #ccc;
             background-repeat: no-repeat;
             background-position: center;
             background-origin: center;
@@ -43,7 +43,6 @@ lang="en" style="">
             line-height: 1.4em;
             background-color: white;
         }
-        
         
         h2
         {
@@ -69,13 +68,14 @@ lang="en" style="">
         
         .logo
         {
-            min-width: 300px;
+            min-width: 270px;
             max-width: 800px;
             width: 50%;
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
+        
         
         .gumroad-icn
         {
@@ -129,8 +129,8 @@ lang="en" style="">
         /* Smartphones (portrait and landscape) ----------- */
         
         @media only screen 
-                            and (min-device-width : 320px) 
-                            and (max-device-width : 480px)
+                                    and (min-device-width : 320px) 
+                                    and (max-device-width : 480px)
         {
         /* Styles */
             #mob-tab
@@ -138,6 +138,14 @@ lang="en" style="">
                 display: block;
             }
             #des-tab
+            {
+                display: none;
+            }
+            #logo-mob
+            {
+                display: block;
+            }
+            #logo-des
             {
                 display: none;
             }
@@ -146,9 +154,9 @@ lang="en" style="">
         /* iPhone 4 ----------- */
         
         @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
-                            only screen and (min-device-pixel-ratio : 1.5)
-                            and (min-device-width : 320px) 
-                            and (max-device-width : 480px)
+                                    only screen and (min-device-pixel-ratio : 1.5)
+                                    and (min-device-width : 320px) 
+                                    and (max-device-width : 480px)
         {
         /* Styles */
             #mob-tab
@@ -159,12 +167,20 @@ lang="en" style="">
             {
                 display: none;
             }
+            #logo-mob
+            {
+                display: block;
+            }
+            #logo-des
+            {
+                display: none;
+            }
         }
         
         /* Desktops and laptops ----------- */
         
         @media only screen 
-                            and (min-width : 768px)
+                                    and (min-width : 768px)
         {
         /* Styles */
             #mob-tab
@@ -172,6 +188,14 @@ lang="en" style="">
                 display: none;
             }
             #des-tab
+            {
+                display: block;
+            }
+            #logo-mob
+            {
+                display: none;
+            }
+            #logo-des
             {
                 display: block;
             }
@@ -194,7 +218,8 @@ lang="en" style="">
 
                 <div class="small-12 columns large-centered small-centered">
 
-                    <img src="img/logo.png" class="logo" alt="Logo">
+                    <img src="img/logo.png" class="logo" alt="Logo" id="logo-des">
+                    <img src="img/logo-mob.png" class="logo" alt="Logo" id="logo-mob">
 
                     <h1>“A less annoying way to a healthier life”</h1>
                     <div class="panel">
